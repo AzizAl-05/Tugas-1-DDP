@@ -1,0 +1,107 @@
+{% extends 'index.html' %}
+{% load static %} 
+{% block content %}
+
+
+<div class="card" justify-content-center>
+  <div class="card-body text-center">
+    <figure>
+      <blockquote class="blockquote">
+        <p class="fw-bold">Perkenalkan, saya Abdul Aziz Al Palembani</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Informatika <cite title="Source Title">Student</cite>
+      </figcaption>
+    </figure>
+    </div>
+
+    <div class="text-center">
+  <img src="../static/images/Aziz.png" class="rounded" alt="foto-profil"/>
+</div>
+
+  <div class="card-body text-center">
+    <p class="card-text">Halo! Nama saya Abdul Aziz Al Palembani, biasa dipanggil Aziz. Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di bidang Informatika. Saya memiliki minat yang besar dalam teknologi dan pengembangan perangkat lunak. Selain belajar, saya juga aktif dalam berbagai kegiatan kampus dan komunitas teknologi. Saya berharap dapat terus mengembangkan keterampilan saya dan berkontribusi dalam dunia teknologi di masa depan.</p>  
+
+</div>
+</div>
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Layanan Saya</h2>
+        <p class="text-muted">Sebagai mahasiswa Teknik Informatika, saya menawarkan dukungan teknis dalam beberapa bidang berikut:</p>
+    </div>
+    
+    <div class="row g-4 justify-content-center"> 
+        
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                  <i class="bi bi-laptop display-4 text-primary"></i>
+                    <i class="bi bi-code-square display-4 text-primary"></i>
+                    <h5 class="card-title mt-3 fw-bold">Pengembangan Web Dasar</h5>
+                    <p class="card-text text-secondary">Membantu pembuatan website statis maupun dinamis sederhana menggunakan kerangka kerja Django untuk keperluan tugas atau projek kecil.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                    <i class="bi bi-layout-text-window-reverse display-4 text-success"></i> 
+                    <h5 class="card-title mt-3 fw-bold">Perancangan Antarmuka</h5>
+                    <p class="card-text text-secondary">Menyusun tata letak halaman web yang rapi dan responsif menggunakan Bootstrap agar dokumen atau projek Anda mudah diakses di berbagai perangkat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm text-center p-4">
+                <div class="card-body">
+                  <i class="bi bi-palette display-4 text-primary"></i>
+                    <i class="bi bi-chat-quote display-4 text-warning"></i> 
+                    <h5 class="card-title mt-3 fw-bold">Desain Grafis</h5>
+                    <p class="card-text text-secondary">Membuat desain grafis yang modern, elegan, dan ramah pengguna dan bisa dipakai untuk berbagai layanan usaha.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container my-5 py-5 bg-light rounded">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Project Terbaru</h2>
+        <p class="text-muted">Berikut adalah beberapa project terbaru saya.</p>
+    </div>
+    <div class="row justify-content-center g-4
+    ">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm overflow-hidden">
+                <img src="../static/images/project 1.png" class="card-img-top" alt="Project Django">
+                <div class="card-body">
+                    <h5 class="fw-bold">Web Design</h5>
+                    <p class="small text-secondary">Mendesain sebuah landing page website menggunakan figma untuk sebuah pelatihan menjahit yang ada di palembang.</p>
+                    <a href="https://www.figma.com/design/FXehvWdG9sUyxvfaCtoFwS/web-Design?node-id=0-1&t=QVtcVNlp9pFDBeLv-1" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="p-5 text-center bg-primary text-white rounded-5 shadow-lg">
+        <h2 class="fw-bold">Punya Ide Project Menarik?</h2>
+        <p class="lead mb-4">Saya selalu terbuka untuk diskusi mengenai pengembangan web, desain, atau sekadar berbagi pengalaman seputar dunia IT.</p>
+        
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="https://api.whatsapp.com/send/?phone=62895322692911&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">
+                <i class="bi bi-whatsapp me-2"></i>Hubungi Saya
+            </a>
+            <a href="mailto:azizalpalembani@gmail.com" class="btn btn-outline-light btn-lg px-4">
+                <i class="bi bi-envelope me-2"></i>Kirim Email
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

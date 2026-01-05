@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Galeri Kegiatan</h2>
+        <p class="text-muted">Dokumentasi perjalanan belajar dan aktivitas saya selama mengikuti perkuliahan di-jurusan Teknik Informatika.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+                <div class="hover-zoom">
+                    <img src="../static/images/Magang LDK Senada.jpeg" class="card-img-top" alt="Magang LDK Senada">
+                </div>
+                <div class="card-body">
+                    <p class="card-text small fw-bold mb-0">Magang LDK Senada</p>
+                    <small class="text-muted">November-Desember 2025</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+                <div class="hover-zoom">
+                    <img src="../static/images/Bizfest.jpeg" class="card-img-top" alt="Bizfest 2025">
+                </div>
+                <div class="card-body">
+                    <p class="card-text small fw-bold mb-0">Bizfest 2025 : Empowering Business, Creating Impact</p>
+                    <small class="text-muted">Desember 2025</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="card border-0 shadow-sm overflow-hidden h-100">
+                <div class="hover-zoom">
+                    <img src="../static/images/Tech.jpeg" class="card-img-top" alt="Bigtech vol 04">
+                </div>
+                <div class="card-body">
+                    <p class="card-text small fw-bold mb-0">Bigtech vol 04</p>
+                    <small class="text-muted">Oktober 2025</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hover-zoom {
+        overflow: hidden;
+    }
+    .hover-zoom img {
+        transition: transform .5s ease;
+    }
+    .hover-zoom:hover img {
+        transform: scale(1.1);
+    }
+</style>
+{% endblock %}

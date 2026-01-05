@@ -1,0 +1,91 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Portfolio Abdul Aziz Al Palembani</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!--- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  
+  </head>
+  <style>
+    #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Sembunyikan dulu, nanti muncul saat scroll */
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    line-height: 50px; /* Agar ikon tepat di tengah */
+    text-align: center;
+}
+
+/* Efek saat kursor mendekat */
+#btn-back-to-top:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+  </style>
+  <body>
+  <div class="container-fluid">
+    
+    <!-- slider -->
+	<div class="row">
+        {% include  'header.html' %}
+		
+	</div>
+
+    <!-- menu -->
+	<div class="row">
+         {% include  'menu.html' %}
+		
+	</div>
+
+    <!-- isi content yang berubah-ubah -->
+	<div class="row">
+		<div class="col-md-12 d-flex flex-column mb-3">
+            {% block content %}
+            {% endblock %}
+
+		</div>
+	</div>
+
+    <!-- footer -->
+	<div class="row">
+         {% include  'footer.html' %}
+		
+
+  </div>
+</div>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+
+    <a href="#" class="btn btn-primary btn-lg rounded-circle shadow" id="btn-back-to-top">
+    <i class="bi bi-arrow-up-short"></i>
+</a>
+<script>
+    // Ambil elemen tombol
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // Munculkan tombol saat scroll turun 200px
+    window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // Fungsi klik untuk kembali ke atas dengan halus
+    mybutton.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+  </body>
+</html>

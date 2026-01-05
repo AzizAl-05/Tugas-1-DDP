@@ -1,0 +1,111 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-center">
+            <div class="position-relative d-inline-block">
+                <img src="{% static 'images/Aziz.png' %}" class="img-fluid rounded-5 shadow-lg border border-5 border-white" alt="Abdul Aziz" style="max-height: 450px; object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <h6 class="text-primary fw-bold text-uppercase mb-3">About Me</h6>
+            <h2 class="display-5 fw-bold mb-4">Mahasiswa Informatika yang Berfokus pada Solusi Digital.</h2>
+            <p class="lead text-secondary mb-4">
+                Halo! Saya <strong>Abdul Aziz Al Palembani</strong>. Saat ini saya menempuh pendidikan di jurusan Teknik Informatika. Saya memiliki antusiasme yang tinggi dalam menjembatani ide kreatif dengan kode pemrograman yang fungsional.
+            </p>
+            <p class="text-muted mb-5">
+                Ketertarikan saya pada dunia IT bermula dari rasa penasaran sederhana yaitu, <strong>Bagaimana sih sebuah website itu bekerja?.</strong> Berawal dari pertanyaan itu, sekarang saya hobi merancang halaman web yang tidak hanya terlihat menarik, tapi juga nyaman digunakan. Bagi saya, teknologi tidak harus terasa rumit. Saya percaya bahwa teknologi terbaik adalah teknologi yang paling mudah dipahami dan benar-benar bisa membantu mempermudah urusan sehari-hari orang banyak.
+            </p>
+
+            <div class="row g-4 mb-5">
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-3 rounded-circle me-3">
+                            <i class="bi bi-mortarboard-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Pendidikan</h6>
+                            <p class="small text-muted mb-0">Informatika Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-3 rounded-circle me-3">
+                            <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Asal</h6>
+                            <p class="small text-muted mb-0">Palembang, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h4 class="fw-bold mb-4 text-center">Riwayat Akademik & Organisasi</h4>
+            
+            <div class="table-responsive shadow-sm rounded-4">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Tahun</th>
+                            <th>Institusi / Organisasi</th>
+                            <th>Keterangan / Jabatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge bg-primary">Pendidikan</span></td>
+                            <td>2025 - Sekarang</td>
+                            <td>Sekolah Tinggi Terpadu Nurul Fikri</td>
+                            <td>Mahasiswa Teknik Informatika</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge bg-primary">Pendidikan</span></td>
+                            <td>2024 - 2025</td>
+                            <td>Pesantren Teknologi Ilmu Komunikasi (PeTIK) II Jombang</td>
+                            <td>Jurusan Digital Marketing</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge bg-success">Organisasi</span></td>
+                            <td>2024</td>
+                            <td>Organisasi Pengurus Santri</td>
+                            <td>Anggota Divisi Media</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge bg-primary">Pendidikan</span></td>
+                            <td>2020 - 2023</td>
+                            <td>SMA Negeri Muhammadiyah 6 Palembang</td>
+                            <td>Jurusan IPS</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3 class="fw-bold mb-4">Mengapa Memilih Berkolaborasi dengan Saya?</h3>
+                <p class="text-secondary">Sebagai mahasiswa, saya membawa perspektif segar, dedikasi tinggi untuk belajar hal baru, dan ketelitian dalam mengerjakan setiap baris kode maupun desain yang saya buat.</p>
+                <br>
+                <a href="https://drive.google.com/file/d/14H7hz2Tmv1b-tO3bezFNlr8ofYVT331C/view?usp=sharing" class="btn btn-primary px-4 py-3 rounded-pill shadow fw-bold" target="_blank">Lihat CV</a>
+                <a href="https://api.whatsapp.com/send/?phone=62895322692911" target="_blank" class="btn btn-outline-dark px-4 py-3 rounded-pill fw-bold ms-2">Mari Berdiskusi</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
